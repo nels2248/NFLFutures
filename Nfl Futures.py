@@ -54,6 +54,8 @@ for team in teams:
             imagebox = OffsetImage(img, zoom=0.1)  # Adjust zoom to control the size of logos
             ab = AnnotationBbox(imagebox, (x, y), frameon=False)
             plt.gca().add_artist(ab)
+    else:
+        print(team_data['TEAM'])
 
 # Add labels and title
 plt.xlabel('Week')
