@@ -43,7 +43,7 @@ offset_increment = .05# Adjust as needed# Track the last position used to detect
 df['Week'] = df['Week']+df['rank_value']*offset_increment
 
 # Create the plot
-plt.figure(figsize=(20, 8))
+plt.figure(figsize=(20, 16))
  
 # Define the path to the logos folder
 logo_folder = 'NflLogos'# Replace with your actual logos folder path# Plot each team's odds over the weeks and add logos
@@ -85,7 +85,7 @@ plt.title('NFL $100 Bet For Super Bowl Payout By Week 2024 Season')
 plt.ylim(0,3500)
 #plt.xlim(1,2.7)
 # Set x-axis to show only the numbers we have
-plt.xticks([1,2])
+plt.xticks([1,2,3,4])
 
 # Save the plot with date and time in the filename
 timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
